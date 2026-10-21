@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>TechToolbox</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+         ===================================================== -->
+
+    <div class="scanlines"></div>
+
+    <div class="cyber-frame">
+
+
+        <!-- =====================================================
+             HEADER
+             ===================================================== -->
+
+        <header class="app-header">
+
+            <div class="logo">
+
+                <span class="logo-tech">
+                    TECH
+                </span>
+
+                <span class="logo-tool">
+                    TOOLBOX
+                </span>
+
+            </div>
+
+            <p class="tagline">
+                [ YOUR POCKET TECH TOOLKIT ]
+            </p>
+
+        </header>
+
+
+
+<!-- MODE SELECTOR -->
+<section class="mode-selector" id="mode-selector">
+
+    <div class="mode-title">
+        >_ TECHTOOLBOX
+    </div>
+
+    <div class="mode-subtitle">
+        NEYE İHTİYACIN VAR?
+    </div>
+
+    <div class="mode-buttons">
+
+        <button class="mode-card daily" id="daily-mode" type="button">
+            <div class="mode-icon">🏠</div>
+
+            <div class="mode-name">
+                GÜNLÜK<br>İŞLER
+            </div>
+
+            <div class="mode-line"></div>
+
+            <div class="mode-description">
+                Herkes için pratik araçlar
+            </div>
+        </button>
+
+
+        <button class="mode-card developer" id="developer-mode" type="button">
+            <div class="mode-icon">&lt;/&gt;</div>
+
+            <div class="mode-name">
+                PROGRAMCI<br>ARAÇLARI
+            </div>
+
+            <div class="mode-line"></div>
+
+            <div class="mode-description">
+                Developer command center
+            </div>
+        </button>
+
+    </div>
+
+</section>
+
+
+      
+        <!-- =====================================================
+             MAIN
+             ===================================================== -->
+
+        <main>
+
+
+<!-- BACK TO MODE SELECTOR -->
+<button class="back-to-modes" id="back-to-modes" type="button">
+    ← ANA MENÜ
+</button>
+
+
+          
+
+            <!-- SECTION TITLE -->
+
+            <div class="section-title">
+
+                <span class="prompt">
+                    &gt;_
+                </span>
+
+                <span>
+                    TOOLS
+                </span>
+
+                <span class="dots">
+                    •••
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 SEARCH
+                 ================================================= -->
+
+            <div class="tool-search">
+
+                <div class="search-wrapper">
+
+                    <span class="search-icon">
+                        🔎
+                    </span>
+
+                    <input
+                        type="text"
+                        id="tool-search"
+                        placeholder="Search tools..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="clear-search"
+                        class="clear-search"
+                        type="button"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="search-result-info"
+                class="search-result-info"
+            >
+                12 TOOLS AVAILABLE
+            </div>
+
+
+            <!-- =================================================
+                 CATEGORIES
+                 ================================================= -->
+
+            <div class="category-bar">
+
+                <button
+                    class="category-btn active"
+                    data-category="all"
+                >
+                    ALL
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="security"
+                >
+                    SECURITY
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="development"
+                >
+                    DEVELOPMENT
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="web"
+                >
+                    WEB
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="design"
+                >
+                    DESIGN
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="utility"
+                >
+                    UTILITY
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 TOOLS GRID
+                 ================================================= -->
+
+            <div class="tools-grid">
+
+
+                <!-- PASSWORD -->
+
+                <button class="tool-card red" data-tool="password-generator" data-category="security" data-mode="daily">
+
+                    <div class="tool-icon">
+                        🔐
+                    </div>
+
+                    <div class="tool-name">
+                        PASSWORD<br>
+                        GENERATOR
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- UUID -->
+
+                <button class="tool-card orange" data-tool="uuid-generator" data-category="utility" data-mode="developer">
+
+                    <div class="tool-icon">
+                        🪪
+                    </div>
+
+                    <div class="tool-name">
+                        UUID<br>
+                        GENERATOR
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- QR CODE GENERATOR -->
+                  <button
+                      class="tool-card green"
+                      data-tool="qr-generator"
+                      data-category="utility"
+                      data-mode="daily">
+
+                  <div class="tool-icon">▦</div>
+
+                        <div class="tool-name">
+                          QR CODE<br>GENERATOR
+                                        </div>
+
+                    <div class="tool-line"></div>
+
+                                        </button>
+
+              
+
+                <!-- COLOR -->
+
+                <button class="tool-card green" data-tool="color-tool" data-category="design" data-mode="daily">
+
+                    <div class="tool-icon">
+                        🎨
+                    </div>
+
+                    <div class="tool-name">
+                        COLOR<br>
+                        TOOL
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- JSON -->
+
+                <button class="tool-card cyan" data-tool="json-formatter" data-category="development" data-mode="developer">
+
+                    <div class="tool-icon">
+                        { }
+                    </div>
+
+                    <div class="tool-name">
+                        JSON<br>
+                        FORMATTER
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- BASE64 -->
+
+                <button class="tool-card purple" data-tool="base64" data-category="development" data-mode="developer">
+
+                    <div class="tool-icon">
+                        ab
+                    </div>
+
+                    <div class="tool-name">
+                        BASE64<br>
+                        ENCODER / DECODER
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- URL -->
+
+                <button class="tool-card blue" data-tool="url-encoder" data-category="web" data-mode="daily">
+
+                    <div class="tool-icon">
+                        🔗
+                    </div>
+
+                    <div class="tool-name">
+                        URL<br>
+                        ENCODER / DECODER
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- LOREM -->
+
+                <button class="tool-card yellow" data-tool="lorem-generator" data-category="utility" data-mode="daily">
+
+                    <div class="tool-icon">
+                        📄
+                    </div>
+
+                    <div class="tool-name">
+                        LOREM<br>
+                        IPSUM
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- TIMESTAMP -->
+
+                <button class="tool-card teal" data-tool="timestamp" data-category="utility" data-mode="developer">
+
+                    <div class="tool-icon">
+                        ◷
+                    </div>
+
+                    <div class="tool-name">
+                        TIMESTAMP<br>
+                        CONVERTER
+                    </div>
+
+                    <div class="card-line"></div>
+
+                </button>
+
+
+                <!-- NUMBER BASE -->
+
+                <button class="tool-card orange" data-tool="number-base" data-category="utility" data-mode="daily">
+
+                    <div class="tool-icon">
+                        🔢
+                    </div>
+
+                    <div class="tool-name">
+                        NUMBER BASE<br>
+                        CONVERTER
+                    </div>
+
+                    <div class="tool-line"></div>
+
+                </button>
+
+
+                <!-- HASH -->
+
+                <button class="tool-card red" data-tool="hash-generator" data-category="security" data-mode="developer">
+
+                    <div class="tool-icon">
+                        #️⃣
+                    </div>
+
+                    <div class="tool-name">
+                        HASH<br>
+                        GENERATOR
+                    </div>
+
+                    <div class="tool-line"></div>
+
+                </button>
+
+
+                <!-- JWT -->
+
+                <button class="tool-card cyan" data-tool="jwt-decoder" data-category="development" data-mode="developer">
+
+                    <div class="tool-icon">
+                        🔐
+                    </div>
+
+                    <div class="tool-name">
+                        JWT<br>
+                        ENCODER / DECODER
+                    </div>
+
+                    <div class="tool-line"></div>
+
+                </button>
+
+
+                <!-- REGEX -->
+
+                <button class="tool-card purple" data-tool="regex-tester" data-category="development" data-mode="developer">
+
+                    <div class="tool-icon">
+                        .*
+                    </div>
+
+                    <div class="tool-name">
+                        REGEX<br>
+                        TESTER
+                    </div>
+
+                    <div class="tool-line"></div>
+
+                </button>
+
+
+            </div>
+            <!-- ↑ TOOLS GRID BURADA KAPANIYOR -->
+
+
+        </main>
+        <!-- ↑ MAIN BURADA KAPANIYOR -->
+
+
+        <!-- =====================================================
+             NUMBER BASE CONVERTER MODAL
+             ===================================================== -->
+
+        <div
+            class="tool-modal"
+            id="number-base-modal"
+        >
+
+            <div class="modal-content orange">
+
+                <button
+                    class="modal-close"
+                    data-close="number-base-modal"
+                    type="button"
+                >
+                    ×
+                </button>
+
+                <div class="modal-title">
+                    &gt;_ NUMBER BASE CONVERTER
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        INPUT VALUE
+                    </label>
+
+                    <input
+                        type="text"
+                        id="base-input"
+                        placeholder="Enter value..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        INPUT BASE
+                    </label>
+
+                    <select id="base-input-type">
+
+                        <option value="2">
+                            BINARY (2)
+                        </option>
+
+                        <option value="8">
+                            OCTAL (8)
+                        </option>
+
+                        <option
+                            value="10"
+                            selected
+                        >
+                            DECIMAL (10)
+                        </option>
+
+                        <option value="16">
+                            HEXADECIMAL (16)
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    id="convert-base"
+                    class="modal-action orange"
+                    type="button"
+                >
+                    &gt; CONVERT
+                </button>
+
+                <div class="base-results">
+
+                    <div class="base-result">
+
+                        <span>
+                            BINARY
+                        </span>
+
+                        <strong id="result-binary">
+                            -
+                        </strong>
+
+                    </div>
+
+                    <div class="base-result">
+
+                        <span>
+                            OCTAL
+                        </span>
+
+                        <strong id="result-octal">
+                            -
+                        </strong>
+
+                    </div>
+
+                    <div class="base-result">
+
+                        <span>
+                            DECIMAL
+                        </span>
+
+                        <strong id="result-decimal">
+                            -
+                        </strong>
+
+                    </div>
+
+                    <div class="base-result">
+
+                        <span>
+                            HEXADECIMAL
+                        </span>
+
+                        <strong id="result-hex">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="base-error"
+                    class="tool-error"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             HASH GENERATOR MODAL
+             ===================================================== -->
+
+        <div
+            class="tool-modal"
+            id="hash-generator-modal"
+        >
+
+            <div class="modal-content red">
+
+                <button
+                    class="modal-close"
+                    data-close="hash-generator-modal"
+                    type="button"
+                >
+                    ×
+                </button>
+
+                <div class="modal-title">
+                    &gt;_ HASH GENERATOR
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        INPUT TEXT
+                    </label>
+
+                    <textarea
+                        id="hash-input"
+                        placeholder="Enter text..."
+                        rows="6"
+                    ></textarea>
+
+                </div>
+
+                <button
+                    id="generate-hash"
+                    class="modal-action red"
+                    type="button"
+                >
+                    &gt; GENERATE HASHES
+                </button>
+
+                <div class="hash-results">
+
+
+                    <!-- SHA1 -->
+
+                    <div class="hash-result">
+
+                        <span>
+                            SHA-1
+                        </span>
+
+                        <div class="hash-value-row">
+
+                            <strong id="hash-sha1">
+                                -
+                            </strong>
+
+                            <button
+                                class="hash-copy"
+                                data-copy="hash-sha1"
+                                type="button"
+                            >
+                                COPY
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SHA256 -->
+
+                    <div class="hash-result">
+
+                        <span>
+                            SHA-256
+                        </span>
+
+                        <div class="hash-value-row">
+
+                            <strong id="hash-sha256">
+                                -
+                            </strong>
+
+                            <button
+                                class="hash-copy"
+                                data-copy="hash-sha256"
+                                type="button"
+                            >
+                                COPY
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SHA512 -->
+
+                    <div class="hash-result">
+
+                        <span>
+                            SHA-512
+                        </span>
+
+                        <div class="hash-value-row">
+
+                            <strong id="hash-sha512">
+                                -
+                            </strong>
+
+                            <button
+                                class="hash-copy"
+                                data-copy="hash-sha512"
+                                type="button"
+                            >
+                                COPY
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             JWT DECODER / ENCODER MODAL
+             ===================================================== -->
+
+        <div
+            class="tool-modal"
+            id="jwt-decoder-modal"
+        >
+
+            <div class="modal-content cyan">
+
+                <button
+                    class="modal-close"
+                    id="jwt-close"
+                    type="button"
+                >
+                    ×
+                </button>
+
+
+                <div class="modal-title">
+                    &gt;_ JWT DECODER
+                </div>
+
+
+                <!-- JWT INPUT -->
+
+                <div class="input-group">
+
+                    <label>
+                        JWT TOKEN
+                    </label>
+
+                    <textarea
+                        id="jwt-input"
+                        rows="7"
+                        spellcheck="false"
+                        placeholder="Paste JWT token here..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    id="jwt-decode"
+                    class="modal-action cyan"
+                    type="button"
+                >
+                    &gt; DECODE JWT
+                </button>
+
+
+                <!-- HEADER -->
+
+                <div class="hash-result">
+
+                    <span>
+                        HEADER
+                    </span>
+
+                    <textarea
+                        id="jwt-header"
+                        rows="5"
+                        readonly
+                        spellcheck="false"
+                        placeholder="Decoded header..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PAYLOAD -->
+
+                <div class="hash-result">
+
+                    <span>
+                        PAYLOAD
+                    </span>
+
+                    <textarea
+                        id="jwt-payload"
+                        rows="8"
+                        readonly
+                        spellcheck="false"
+                        placeholder="Decoded payload..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SIGNATURE -->
+
+                <div class="hash-result">
+
+                    <span>
+                        SIGNATURE
+                    </span>
+
+                    <textarea
+                        id="jwt-signature"
+                        rows="4"
+                        readonly
+                        spellcheck="false"
+                        placeholder="JWT signature..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- =================================================
+                     JWT ENCODER
+                     ================================================= -->
+
+                <div class="jwt-divider"></div>
+
+                <div class="modal-title">
+                    &gt;_ JWT ENCODER
+                </div>
+
+
+                <!-- HEADER JSON -->
+
+                <div class="input-group">
+
+                    <label>
+                        HEADER JSON
+                    </label>
+
+                    <textarea
+                        id="jwt-encode-header"
+                        rows="5"
+                        spellcheck="false"
+                    >{
+    "alg": "HS256",
+    "typ": "JWT"
+}</textarea>
+
+                </div>
+
+
+                <!-- PAYLOAD JSON -->
+
+                <div class="input-group">
+
+                    <label>
+                        PAYLOAD JSON
+                    </label>
+
+                    <textarea
+                        id="jwt-encode-payload"
+                        rows="8"
+                        spellcheck="false"
+                    >{
+    "sub": "TechToolbox",
+    "role": "user"
+}</textarea>
+
+                </div>
+
+
+                <!-- SECRET -->
+
+                <div class="input-group">
+
+                    <label>
+                        SECRET KEY
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jwt-secret"
+                        placeholder="Enter secret key..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <button
+                    id="jwt-encode"
+                    class="modal-action cyan"
+                    type="button"
+                >
+                    &gt; ENCODE JWT
+                </button>
+
+
+                <!-- OUTPUT -->
+
+                <div class="input-group">
+
+                    <label>
+                        GENERATED JWT
+                    </label>
+
+                    <textarea
+                        id="jwt-encoded-output"
+                        rows="7"
+                        readonly
+                        spellcheck="false"
+                        placeholder="Generated JWT will appear here..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    id="jwt-copy"
+                    class="modal-action cyan"
+                    type="button"
+                >
+                    COPY JWT
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             REGEX TESTER MODAL
+             ===================================================== -->
+
+        <div
+            class="tool-modal"
+            id="regex-tester-modal"
+        >
+
+            <div class="modal-content purple">
+
+                <button
+                    class="modal-close"
+                    id="regex-close"
+                    type="button"
+                >
+                    ×
+                </button>
+
+
+                <div class="modal-title">
+                    &gt;_ REGEX TESTER
+                </div>
+
+
+                <!-- REGEX -->
+
+                <div class="input-group">
+
+                    <label>
+                        REGULAR EXPRESSION
+                    </label>
+
+                    <input
+                        type="text"
+                        id="regex-pattern"
+                        placeholder="Example: [A-Za-z]+"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <!-- TEST TEXT -->
+
+                <div class="input-group">
+
+                    <label>
+                        TEST TEXT
+                    </label>
+
+                    <textarea
+                        id="regex-test-text"
+                        rows="7"
+                        spellcheck="false"
+                        placeholder="Enter text to test..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- FLAGS -->
+
+                <div class="input-group">
+
+                    <label>
+                        FLAGS
+                    </label>
+
+                    <input
+                        type="text"
+                        id="regex-flags"
+                        value="g"
+                        placeholder="gim"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <button
+                    id="regex-test"
+                    class="modal-action purple"
+                    type="button"
+                >
+                    &gt; TEST REGEX
+                </button>
+
+
+                <div
+                    id="regex-status"
+                    class="regex-status"
+                >
+                    READY
+                </div>
+
+
+                <!-- RESULTS -->
+
+                <div class="input-group">
+
+                    <label>
+                        MATCHES
+                    </label>
+
+                    <textarea
+                        id="regex-results"
+                        rows="8"
+                        readonly
+                        spellcheck="false"
+                        placeholder="Matches will appear here..."
+                    ></textarea>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+      <!-- QR CODE GENERATOR MODAL -->
+<div class="tool-modal" id="qr-generator-modal">
+
+    <div class="modal-content green">
+
+        <button
+            class="modal-close"
+            id="qr-close"
+            type="button">
+            ×
+        </button>
+
+        <div class="modal-title">
+            >_ QR CODE GENERATOR
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                TEXT / URL
+            </label>
+
+            <textarea
+                id="qr-input"
+                rows="5"
+                spellcheck="false"
+                placeholder="Metin veya bağlantı gir..."></textarea>
+
+        </div>
+
+
+        <button
+            id="qr-generate"
+            class="modal-action green"
+            type="button">
+
+            > GENERATE QR
+
+        </button>
+
+
+        <div
+            id="qr-status"
+            class="qr-status">
+
+            READY
+
+        </div>
+
+
+        <div
+            id="qr-output-wrapper"
+            class="qr-output-wrapper">
+
+            <div id="qr-output"></div>
+
+        </div>
+
+
+        <button
+            id="qr-download"
+            class="modal-action green"
+            type="button"
+            disabled>
+
+            ↓ DOWNLOAD PNG
+
+        </button>
+
+
+        <button
+            id="qr-clear"
+            class="modal-action qr-secondary"
+            type="button">
+
+            CLEAR
+
+        </button>
+
+    </div>
+
+</div>
+
+      
+
+        <!-- =====================================================
+             FOOTER
+             ===================================================== -->
+
+        <footer>
+
+            <span>
+                •••
+            </span>
+
+            <span>
+                TECHTOOLBOX • v1.0
+            </span>
+
+            <span>
+                •••
+            </span>
+
+        </footer>
+
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+
+
+
+  
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
