@@ -5743,7 +5743,6 @@ if (regexTestButton) {
 })();
 
 
-/* Hide tools that don't belong to the selected mode */
 .tool-card[hidden] {
     display: none !important;
 }
