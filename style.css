@@ -5390,7 +5390,9 @@ body.toolbox-mode-active main {
 }
 
 
-
+.tool-card[hidden] {
+    display: none !important;
+}
 
 
 
