@@ -5743,9 +5743,6 @@ if (regexTestButton) {
 })();
 
 
-.tool-card[hidden] {
-    display: none !important;
-}
 
 
 
