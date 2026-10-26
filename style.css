@@ -5397,3 +5397,170 @@ body.toolbox-mode-active main {
 
 
 
+
+/* QR GENERATOR: PASSWORD GENERATOR STYLE */
+
+#qr-generator-modal {
+    background: rgba(0, 0, 0, 0.92);
+    padding: 20px;
+}
+
+#qr-generator-modal .modal-content.green {
+    position: relative;
+    width: min(520px, 100%);
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: #050707;
+    border: 1px solid #38ff35;
+    color: #e8ffff;
+    box-shadow:
+        0 0 10px rgba(56, 255, 53, 0.25),
+        0 0 35px rgba(56, 255, 53, 0.12);
+}
+
+#qr-generator-modal .modal-title {
+    color: #38ff35;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 35px 25px 0;
+    text-shadow: 0 0 8px rgba(56, 255, 53, 0.65);
+}
+
+#qr-generator-modal .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    color: #38ff35;
+    font-family: inherit;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#qr-generator-modal .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+#qr-generator-modal .input-group label {
+    color: #aababa;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#qr-generator-modal #qr-input {
+    display: block;
+    width: 100%;
+    min-height: 110px;
+    padding: 13px;
+    resize: vertical;
+    background: #080c0d;
+    border: 1px solid #263333;
+    color: #e8ffff;
+    font: 14px/1.5 "Courier New", monospace;
+    outline: none;
+}
+
+#qr-generator-modal #qr-input:focus {
+    border-color: #38ff35;
+    box-shadow: 0 0 10px rgba(56, 255, 53, 0.12);
+}
+
+#qr-generator-modal .modal-action.green {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    padding: 13px 15px;
+    margin-top: 12px;
+    background: rgba(56, 255, 53, 0.04);
+    border: 1px solid #38ff35;
+    color: #38ff35;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+#qr-generator-modal .modal-action.green:hover:not(:disabled) {
+    background: rgba(56, 255, 53, 0.12);
+    box-shadow: 0 0 12px rgba(56, 255, 53, 0.2);
+}
+
+#qr-generator-modal .modal-action.green:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#qr-generator-modal .qr-status {
+    margin: 18px 0 0;
+    min-height: 16px;
+    color: #38ff35;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#qr-generator-modal .qr-output-wrapper {
+    width: 100%;
+    min-height: 220px;
+    margin: 18px 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(56, 255, 53, 0.3);
+    background: #030505;
+}
+
+#qr-generator-modal #qr-output {
+    max-width: 100%;
+    padding: 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qr-generator-modal #qr-output canvas,
+#qr-generator-modal #qr-output img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#qr-generator-modal .qr-secondary {
+    margin-top: 10px;
+    border-color: #435043 !important;
+    color: #aababa !important;
+}
+
+@media (max-width: 600px) {
+    #qr-generator-modal {
+        padding: 12px;
+    }
+
+    #qr-generator-modal .modal-content.green {
+        width: 100%;
+        max-height: 94vh;
+        padding: 22px;
+    }
+
+    #qr-generator-modal .modal-title {
+        font-size: 17px;
+    }
+
+    #qr-generator-modal .qr-output-wrapper {
+        min-height: 190px;
+        padding: 10px;
+    }
+}
+
+
