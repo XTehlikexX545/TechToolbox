@@ -603,7 +603,9 @@ function copyUUIDs() {
 // COLOR TOOL
 // ========================================
 
-const colorCard = document.querySelector(".tool-card.green");
+const colorCard = document.querySelector(
+    '[data-tool="color-tool"]'
+);
 
 if (colorCard) {
 
